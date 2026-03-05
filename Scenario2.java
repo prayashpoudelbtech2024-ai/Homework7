@@ -1,6 +1,5 @@
 import java.util.*;
 
-// Book Class
 class Book {
     String isbn;
     String title;
@@ -22,7 +21,6 @@ class Book {
     }
 }
 
-// Library Class
 class Library {
     List<Book> books = new ArrayList<>();
 
@@ -72,13 +70,11 @@ class Library {
     }
 }
 
-// Main Class
 public class Scenario2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Library library = new Library();
 
-        // Default books
         library.addBook(new Book("978-01", "Java Basics", "James Gosling", true));
         library.addBook(new Book("978-02", "Python Essentials", "Guido van Rossum", true));
         library.addBook(new Book("978-03", "C++ Fundamentals", "Bjarne Stroustrup", true));
